@@ -38,8 +38,14 @@ body {
 
 
 
-/* set up drop zones */
-
+/* set up drop zones xuxian- - - - - -*/
+.drop-zone{
+	width: 49.5%;
+	height: 49.5%;
+	border: thin dashed white;
+	float: left;
+	position: relative;
+}
 
 
 /* end board styles */
@@ -59,10 +65,10 @@ header h1 {
 	margin: 10px 0
 }
 
-header p, footer p { 
-	font-size: 1.7em; 
-	letter-spacing: 2px; 
-	margin: 10px 0 
+header p, footer p {
+	font-size: 1.7em;
+	letter-spacing: 2px;
+	margin: 10px 0
 }
 
 footer {
