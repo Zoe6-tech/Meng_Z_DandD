@@ -28,6 +28,10 @@
 		<!--drag the puzzle pieces here -->
 		<div class="puzzle-board">
 			<h3 class="hidden">The Drop Zones</h3>
+			<dic class="drop-zone tl"></dic><!--top right-->
+			<dic class="drop-zone tr"></dic>
+			<dic class="drop-zone bl"></dic>
+			<dic class="drop-zone br"></dic>
 		</div>
 	</section>
 
@@ -35,11 +39,11 @@
 		<!-- <h2 class="hidden">Switch the Puzzle</h2> -->
 		<p>click thumb to change pieces!</p>
 		<nav id="buttonHolder">
-			<h3 class="hidden">Select Image</h3>
-			<img src="images/buttonZero.jpg" alt="thumbnail">
-			<img src="images/buttonOne.jpg" alt="thumbnail">
-	    <img src="images/buttonTwo.jpg" alt="thumbnail">
-			<img src="images/buttonThree.jpg" alt="thumbnail">
+			<h3 class="hidden">Select Image</h3>	<!--data is necessary, after "-" whatever you want name-->
+			<img data-puzzleref="0" src="images/buttonZero.jpg" alt="thumbnail">
+			<img data-puzzleref="1" src="images/buttonOne.jpg" alt="thumbnail">
+	    <img data-puzzleref="2" src="images/buttonTwo.jpg" alt="thumbnail">
+			<img data-puzzleref="3" src="images/buttonThree.jpg" alt="thumbnail">
 		</nav>
 	</footer>
 
