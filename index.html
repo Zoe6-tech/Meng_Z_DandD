@@ -17,21 +17,21 @@
 		<h2 class="hidden">The Game Board</h2>
 
 		<!--these are the draggable pieces->drag them to the right-->
-		<div class="puzzle-pieces">
+		<div class="puzzle-pieces" id="puzzleWrap">
 			<h3 class="hidden">The Drag Zone</h3>
 			<img src="images/topLeft0.jpg" alt="top left" class="puzzle-image">
-			<img src="images/topRight0.jpg" alt="top left" class="puzzle-image">
-			<img src="images/bottomLeft0.jpg" alt="top left" class="puzzle-image">
-			<img src="images/bottomRight0.jpg" alt="top left" class="puzzle-image">
+			<img src="images/topRight0.jpg" alt="top right" class="puzzle-image">
+			<img src="images/bottomLeft0.jpg" alt="bottom left" class="puzzle-image">
+			<img src="images/bottomRight0.jpg" alt="bottom right" class="puzzle-image">
 		</div>
 
 		<!--drag the puzzle pieces here -->
 		<div class="puzzle-board">
 			<h3 class="hidden">The Drop Zones</h3>
-			<dic class="drop-zone tl"></dic><!--top right-->
-			<dic class="drop-zone tr"></dic>
-			<dic class="drop-zone bl"></dic>
-			<dic class="drop-zone br"></dic>
+			<div class="drop-zone tl" pos="0"></div><!--top right-->
+			<div class="drop-zone tr" pos="1"></div>
+			<div class="drop-zone bl" pos="2"></div>
+			<div class="drop-zone br" pos="3"></div>
 		</div>
 	</section>
 
