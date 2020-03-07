@@ -44,7 +44,6 @@
     function allowDrop(event){
 	    //event.preventDefault();
         console.log('dropped on a drop zone');
-
 			 // drop zone bug:
         //Determines if the parent tagname is div  &&  children.length=how many children the div element below has
         if (event.path[0].tagName == 'DIV' && event.path[0].children.length == 0) {
@@ -56,9 +55,6 @@
             event.target.appendChild(document.querySelector(`#${currentImage}`));
             // Clear the drag data cache (for all formats/types)
             event.dataTransfer.clearData();
-
-
-
         }
     }
 
