@@ -22,7 +22,7 @@ If user select a new puzzle piece and drop it on an occupied drop zone, the acti
 3. Only **if** the drop zone is empty (==0) , puzzle pieces could be drop onto it
 
 
-### Reset debug
+### Reset bug
 **Clear all the pieces on the drop zone area**
 All the pieces on the drop zone should mush removed after user click the image button.
 Add more detail into the changeImageSet() function
