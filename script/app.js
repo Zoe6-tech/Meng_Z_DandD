@@ -4,10 +4,8 @@
 		puzzlePieces=document.querySelectorAll('.puzzle-pieces img');
 		gameBoard=document.querySelector('.puzzle-board');
         dropZones=document.querySelectorAll('.drop-zone');
-        dropZonesImage=document.querySelectorAll('.drop-zone img');
     const pieceNames = ["topLeft","topRight","bottomLeft","bottomRight"];
 
-    const puzzleWrap = document.getElementById('puzzleWrap');
     //match images
 
     let currentSence = 0;//current sence
@@ -31,12 +29,12 @@
 
     function allowDrag(event){
 	    console.log('started draggin an image');
-        // 设置拖动的格式和数据。使用事件对象的ID来表示数据
+
         event.dataTransfer.setData("text/plain",this.id)
         // console.log(event)
     }
 	function allowDragOver(event){
-	 	//取消事件的默认动作。
+
 		event.preventDefault();
         console.log('dragged over a drop zone');
         // console.log(this)
@@ -47,6 +45,7 @@
 	    //event.preventDefault();
         console.log('dropped on a drop zone');
 
+			 // drop zone bug:
         //Determines if the parent tagname is div  &&  children.length=how many children the div element below has
         if (event.path[0].tagName == 'DIV' && event.path[0].children.length == 0) {
             //go and get the dragged elements's ID from the data transter object
@@ -58,18 +57,8 @@
             // Clear the drag data cache (for all formats/types)
             event.dataTransfer.clearData();
 
-            // bug one:
-            // Store corresponding image
-            dropZonesImage[currentSence][event.path[0].getAttribute('pos')] = currentImage;
-            // console.log(picArrRight)
-            // 去掉左边相应照片
-            for (var a=0; a<4; a++) {
-                if (picArrLeft[currentSence][a] == currentImage) {
-                    picArrLeft[currentSence][a] = '';
-                }
-            }
-            // console.log(picArrLeft)
-            // console.log(picArrRight)
+
+
         }
     }
 
