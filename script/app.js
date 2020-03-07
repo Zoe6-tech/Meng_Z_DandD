@@ -40,36 +40,7 @@
 	        gameBoard.style.backgroundImage = `url(images/background${this.dataset.puzzleref}.jpg)`;
 			//debugger;
         // console.log(puzzleWrap.children.length);
-
-        //empty the images=> drop zone and pizzle board
-        const length = puzzleWrap.children.length;
-        for (var i=0; i<(length-1); i++) {
-            puzzleWrap.removeChild(puzzleWrap.children[1])
-        }
-        // console.log(dropZones);
-				for (var j=0; j<4; j++) {
-            if (dropZones[j].children.length != 0) {
-                dropZones[j].removeChild(dropZones[j].children[0]);
-            }
-        }
-
-				//pizzle pieces
-        for (var a=0; a<4; a++) {
-            if (picArrLeft[currentSence][a]) {
-                var img2 = document.createElement('img');
-                img2.src = `images/${picArrLeft[currentSence][a]}.jpg`;
-                img2.alt = picD[a];
-                img2.className = 'puzzle-image';
-                img2.id = picArrLeft[currentSence][a];
-                puzzleWrap.appendChild(img2);
-                // console.log(img2)
-                img2.addEventListener('dragstart',allowDrag);
-            }
-        }
-
-        return
-	}
-
+    }
 
 
     function allowDrag(event){
