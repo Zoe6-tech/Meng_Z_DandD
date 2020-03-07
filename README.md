@@ -20,7 +20,7 @@ User only can drag and drop one puzzle piece into a drop zone, otherwise is not 
 If user select a new puzzle piece and drop it on an occupied drop zone, the action should be cancelled.
 1. puzzle board still keep the original puzzle pieces    
 2. new puzzle that user selected will automatically back to the puzzle board(not disappear)
-3. Only ```**if**``` the drop zone is empty (==0) , puzzle pieces could be drop onto it
+3. Only **if** the drop zone is empty (==0) , puzzle pieces could be drop onto it
 
 
 ### Reset bug
