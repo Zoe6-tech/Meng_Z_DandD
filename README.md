@@ -13,6 +13,7 @@ the interaction of the game is mainly realized by dragging and dropping function
 the implement of dragging and dropping are mainly binding of allowDrag, allowDrop, allowDragOver event.
 
 
+
 ### Drop Zone bug
 **Only one piece in one drop zone at a time.**
 User only can drag and drop one puzzle piece into a drop zone, otherwise is not allowed. This part can be defined in the allowDrop event.
