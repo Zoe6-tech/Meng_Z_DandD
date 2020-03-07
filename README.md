@@ -15,7 +15,7 @@ the implement of dragging and dropping are mainly binding of allowDrag, allowDro
 
 
 ### Drop Zone bug
-**Only one piece in one drop zone at a time.**
+**Only one piece in one drop zone at a time.**<br/>
 User only can drag and drop one puzzle piece into a drop zone, otherwise is not allowed. This part can be defined in the allowDrop event.
 If user select a new puzzle piece and drop it on an occupied drop zone, the action should be cancelled.
 1. puzzle board still keep the original puzzle pieces    
@@ -24,7 +24,7 @@ If user select a new puzzle piece and drop it on an occupied drop zone, the acti
 
 
 ### Reset bug
-**Clear all the pieces on the drop zone area**
+**Clear all the pieces on the drop zone area**<br/>
 All the pieces on the drop zone should mush removed after user click the image button.
 Add more detail into the changeImageSet() function
 1. All child elements <image>  in the 4 drop zones should be clear(if has)
