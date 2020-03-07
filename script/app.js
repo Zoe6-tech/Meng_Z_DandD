@@ -4,10 +4,8 @@
 		puzzlePieces=document.querySelectorAll('.puzzle-pieces img');
 		gameBoard=document.querySelector('.puzzle-board');
         dropZones=document.querySelectorAll('.drop-zone');
-        dropZonesImage=document.querySelectorAll('.drop-zone img');
     const pieceNames = ["topLeft","topRight","bottomLeft","bottomRight"];
 
-    const puzzleWrap = document.getElementById('puzzleWrap');
     //match images
 
     let currentSence = 0;//current sence
@@ -46,7 +44,7 @@
     function allowDrop(event){
 	    //event.preventDefault();
         console.log('dropped on a drop zone');
-
+			 // drop zone bug:
         //Determines if the parent tagname is div  &&  children.length=how many children the div element below has
         if (event.path[0].tagName == 'DIV' && event.path[0].children.length == 0) {
             //go and get the dragged elements's ID from the data transter object
@@ -57,19 +55,6 @@
             event.target.appendChild(document.querySelector(`#${currentImage}`));
             // Clear the drag data cache (for all formats/types)
             event.dataTransfer.clearData();
-
-            // bug one:
-            // Store corresponding image
-            dropZonesImage[currentSence][event.path[0].getAttribute('pos')] = currentImage;
-            // console.log(picArrRight)
-            // delete images
-            for (var a=0; a<4; a++) {
-                if (picArrLeft[currentSence][a] == currentImage) {
-                    picArrLeft[currentSence][a] = '';
-                }
-            }
-            // console.log(picArrLeft)
-            // console.log(picArrRight)
         }
     }
 
