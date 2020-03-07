@@ -8,12 +8,12 @@ Puzzle game is a unique gaming genre that focuses on solving puzzles. It tests t
 This games are simple to play, only requiring mouse to pointing and clicking to move and select puzzle pieces on the puzzle boards, drag and then drop on the drop zone.
 Once user done the current game or wants to start a new puzzle game, they can click the buttons under the drop zone to switch to a new game.
 
-###Drag and drop function
+### Drag and drop function
 the interaction of the game is mainly realized by dragging and dropping function to achieve the puzzle,
 the implement of dragging and dropping are mainly binding of allowDrag, allowDrop, allowDragOver event.
 
 
-###Drop Zone
+### Drop Zone bug
 User only can drag and drop one puzzle piece into a drop zone, otherwise is not allowed. This part can be defined in the allowDrop event.
 If user select a new puzzle piece and drop it on an occupied drop zone, the action should be cancelled.
 1. puzzle board still keep the original puzzle pieces    
