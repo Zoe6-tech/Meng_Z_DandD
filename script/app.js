@@ -5,7 +5,8 @@
 		gameBoard=document.querySelector('.puzzle-board');
         dropZones=document.querySelectorAll('.drop-zone');
     const pieceNames = ["topLeft","topRight","bottomLeft","bottomRight"];
-
+     // id=puzzleWrap, class=puzzle-pieces
+    const puzzleWrap=document.getElementById('#puzzleWrap');
     //match images
 
     let currentSence = 0;//current sence
@@ -22,7 +23,12 @@
 		//and set the drop zone background image based on Puzzle the user selects
         gameBoard.style.backgroundImage = `url(images/background${this.dataset.puzzleref}.jpg)`;
 		//debugger;
-
+	    
+	    //second bug
+          // clean out the puzzle pieces image div
+	 
+	  
+    
 
     }
 
