@@ -27,7 +27,10 @@ If user select a new puzzle piece and drop it on an occupied drop zone, the acti
 **Clear all the pieces on the drop zone area**<br/>
 All the pieces on the drop zone should mush removed after user click the image button.
 Add more detail into the changeImageSet() function
-1. All child elements <image>  in the 4 drop zones should be clear(if has)
+1. All <image>  in the 4 drop zones should be clear(if has)
+2. Clean out the puzzle pieces div
+3. Generate new pieces
+
 
 ## Author
 Zhu Meng
